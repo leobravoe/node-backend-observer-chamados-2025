@@ -20,7 +20,7 @@ const getChamados = async (req, res) => {
             SELECT *, COUNT(*) OVER() AS total_count
             FROM chamados
             WHERE (estado = $1 OR $1 IS NULL)
-            ORDER BY data_criacao DESC
+            ORDER BY id DESC
             LIMIT $2 OFFSET $3
         `;
         
