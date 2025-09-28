@@ -16,6 +16,9 @@ const addClient = (req, res) => {
         'Content-Type': 'text/event-stream',
         'Connection': 'keep-alive',
         'Cache-Control': 'no-cache',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Cache-Control',
+        'X-Accel-Buffering': 'no', // Desabilita buffering do nginx
     };
     res.writeHead(200, headers);
     const clientId = Date.now();
