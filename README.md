@@ -45,7 +45,7 @@ Em alto nível, a arquitetura consiste em uma aplicação Node.js que utiliza o 
 | `DB_PORT` | `5432` | Sim | Porta do servidor de banco de dados PostgreSQL. |
 | `DB_USER` | `postgres` | Sim | Nome de usuário para a conexão com o banco de dados. |
 | `DB_PASSWORD` | `secret` | Sim | Senha para a conexão com o banco de dados. |
-| `DB_DATABASE` | `observer_db` | Sim | Nome do banco de dados a ser utilizado. |
+| `DB_DATABASE` | `chamados_api_db` | Sim | Nome do banco de dados a ser utilizado. |
 
 5.  **Inicialização de Dados**: O projeto inclui um script para resetar e popular o banco de dados com dados de exemplo.
     ```sh
